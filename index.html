@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Product Landing Page </title>
+    <style>
+
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+}
+
+        @media screen and (max-width: 500px) {
+    ul {
+        width: 100vw;
+    }
+li {
+    margin: 15px;
+    font-size: 10px;
+    width: 100vw;
+}
+ 
+
+a {
+    width: 100vw;
+}
+
+}
+    </style>
+</head>
+<body>
+    <div id="page-wrapper">
+    <header id="header">
+            <nav id="nav-bar">
+                <img  width="75px" height="75px" id="header-img" src="./notapple.png" alt="rainbow-colored-apple-logo">
+                <ul>
+                    <li><a class="nav-link" href="#"> Features</a> </li>
+                    <li><a class="nav-link" href="#"> Works</a> </li>
+                    <li><a class="nav-link" href="#"> Pricing </a> </li>
+                </ul>
+            </nav>
+    </header>
+</div>
+    <section id="hero-message">
+        <h2> A little taste of <em> nostalgia </em> </h2>
+        <form id="form" action="/https://www.freecodecamp.com/email-submit">
+            <label for="email"> <input type="email"  name="email" id="email" placeholder="Enter your email address" required></label>
+            <input id="submit" type="submit"></input>
+        </form>
+    </section>
+    <div class="video-container">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/3QvlxoX1GjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
