@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title> Product Landing Page </title>
     <style>
 
@@ -20,9 +21,38 @@ nav > ul {
     ul {
         width: 100vw;
     }
+  .level {
+      font-size: 10px;
+
+  }
+
+  iframe {
+      width: 50vw;
+      height: 50vw;
+  }
+
+  .product-descriptions {
+    font-size: 10px;
+    margin-top: 30em;
+  }
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(80% / 3);
+    margin-top: 100px;
+    margin-left: 15px;
+    border: 3px solid #000;
+    background-color: white;
+    border-radius: 3px;
+   transition: all .2s ease-in-out; 
+}
+.product:hover { transform: scale(1.1); }
+
 li {
     margin: 7px;
-    font-size: 10px;
+    font-size: 5px;
     width: 100vw;
 }
  
@@ -42,7 +72,7 @@ a {
                 <ul>
                     <li><a class="nav-link" href="#hero-message"> Features</a> </li>
                     <li><a class="nav-link" href="#description"> Works</a> </li>
-                    <li><a class="nav-link" href="#hero-message"> Pricing </a> </li>
+                    <li><a class="nav-link" href="#product"> Pricing </a> </li>
                 </ul>
             </nav>
     </header>
@@ -56,12 +86,12 @@ a {
         </form>
     </section>
 
-
+<section id="hero-message">
     <div class="video-container">
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/3QvlxoX1GjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-
-
+</section>
+<section id="hero-message">
     <div class="product-descriptions" id="description">
         <div class="materials">
             <div class="sub-description">
@@ -81,19 +111,14 @@ a {
             </div>
         </div>
         </div>
-
-        <section id="product-container">
-            <div class="product">
+    </section>
+    <section id="hero-container">
+            <div id="product" class="product">
                 <div class="level">
                     Basic
                 </div>
                 <h2> $0 </h2>
-                <ol>
-                    <li> Lorem ipsum</li>
-                    <li> Lorem ipsum</li>
-                    <li> Lorem ipsum Dolor</li>
-                    <li> Lorem ipsum</li>
-                </ol>
+                <p> Get the basic package and games</p>
                 <button id="select"> Select </button>
             </div>
             <div class="product">
@@ -101,12 +126,7 @@ a {
                     Premium
                 </div>
                 <h2> $25 </h2>
-                <ol>
-                    <li> Lorem ipsum</li>
-                    <li> Lorem ipsum</li>
-                    <li> Lorem ipsum Dolor</li>
-                    <li> Lorem ipsum</li>
-                </ol>
+                <p> Get the premium package and games.</p>
                 <button id="select"> Select </button>
             </div>
             <div class="product">
@@ -114,15 +134,10 @@ a {
                     Diamond
                 </div>
                 <h2> $50 </h2>
-                <ol>
-                    <li> Lorem ipsum</li>
-                    <li> Lorem ipsum</li>
-                    <li> Lorem ipsum Dolor</li>
-                    <li> Lorem ipsum</li>
-                </ol>
+                <p> Get the diamond package with games.</p>
                 <button id="select"> Select </button>
             </div>
-        </section>
+    </section>
 
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

@@ -1,6 +1,6 @@
 # product-landing-page
 
-The Product Landing Page project was created as my second project in the Responsive Design section of the freecodecamp.org curriculum. 
+The Product Landing Page project was created as my third project in the Responsive Design section of the freecodecamp.org curriculum. 
 
 ## Technologies Used
 
