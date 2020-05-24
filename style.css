@@ -78,9 +78,16 @@ i {
 }
 
 p {
-    margin-top: 15px;
+    margin-top: 5px;
+    font-size: 8px;
 }
 
+@media only screen  and ( min-width: 700px) {
+    p {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+}
 
 section {
     display: flex;
